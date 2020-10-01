@@ -1,0 +1,23 @@
+.page__main-sec {
+    background: #FAFAFA;
+    padding: 24px 0;
+}
+
+.page__main-sec .title-keeper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.page__main-sec .title-keeper .select-selected,
+.page__main-sec .title-keeper .select-items {
+    width: 167px;
+    margin-left: 24px;
+}

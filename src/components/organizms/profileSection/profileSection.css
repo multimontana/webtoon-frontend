@@ -1,0 +1,231 @@
+.profile-tabs {
+    padding-top: 64px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;align-items: center;
+    background: #FAFAFA;
+    cursor: pointer;
+}
+
+.profile-tab {
+    margin-right: 64px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    color: #D8D8D8;
+}
+/*a.profile-tab.router-link-exact-active.router-link-active{*/
+/*    color: #000000;*/
+/*}*/
+
+.profile-tab:last-child {
+    margin-right: 0;
+}
+
+section.profile-sec {
+    max-width: 640px;
+    margin: 64px auto;
+}
+
+.profile-sec > form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile-sec .form-keeper {
+    max-width: 416px;
+    width: 100%;
+}
+
+.profile-sec label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E2E2E;
+    margin-bottom: 4px;
+}
+
+.profile-sec .form-keeper .form-element {
+    margin-top: 16px;
+}
+
+.profile-sec .form-keeper .form-element:first-child {
+    margin-top: 0;
+}
+
+.profile-sec .form-keeper .form-element:not(.form-checkbox) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%
+}
+
+.profile-sec .form-keeper .form-element input {
+    margin-bottom: 16px;
+}
+
+.profile-sec .form-keeper .form-element input:last-child {
+    margin-bottom: 0;
+}
+
+.profile-sec .form-keeper .form-element.form-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-sec .form-keeper .form-element.form-checkbox label {
+    order: 2;
+    margin-bottom: 0;
+}
+
+.profile-sec .form-keeper .form-element.form-checkbox input {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    padding: 6px;
+    margin-right: 8px;
+}
+
+.profile-sec .form-keeper .form-element.form-checkbox input:checked:after {
+    content: '';
+    background: url(../../../assets/img/icons/Chek_icon.svg) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+}
+
+.profile-sec .form-keeper .form-element input {
+    width: 100%
+}
+
+.profile-sec .form-keeper .submit-button {
+    width: 123px;
+    height: 48px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-sec .avatar-keeper {
+    max-width: 192px;
+    width: 100%;
+}
+
+.profile-sec .avatar-keeper .form-avatar {
+    width: 100%;
+    height: 192px;
+    position: relative;
+}
+
+.profile-sec .avatar-keeper .form-avatar .image-keeper {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 2px dashed #E8E8E8;
+}
+
+.profile-sec .avatar-keeper .form-avatar .image-keeper img[src]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-sec .avatar-keeper .form-avatar .button-keeper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 6px;
+}
+
+.profile-sec .avatar-keeper .form-avatar .button-keeper .avatar-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-sec .avatar-keeper .form-avatar .avatar-limits {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #939393;
+}
+
+
+/*Dark mode*/
+
+body.dark-mode .profile-sec label {
+    color: #FFF;
+}
+
+body.dark-mode .profile-sec .form-keeper .form-element.form-checkbox input {
+    border-color: #454545
+}
+
+body.dark-mode .profile-sec .avatar-keeper .form-avatar .image-keeper {
+    border-color: #454545
+}
+
+body.dark-mode .profile-sec .avatar-keeper .form-avatar .button-keeper .avatar-button {
+    border: 2px solid #939393
+}
+
+body.dark-mode .profile-sec .avatar-keeper .form-avatar .button-keeper .avatar-button svg {
+    background: black;
+}
+
+body.dark-mode .profile-sec .avatar-keeper .form-avatar .button-keeper .avatar-button svg * {
+    fill: white
+}
+
+body.dark-mode .profile-tabs {
+    background: #171717
+}
+
+body.dark-mode .profile-tab {
+    color: #2e2e2e
+}
+
+body.dark-mode .profile-tab.active {
+    color: #FFF
+}
+
+body.dark-mode .profile-sec .form-keeper .form-element.form-checkbox input:checked:after {
+    content: '';
+    background: url(../../../assets/img/icons/Chek_dark_icon.svg) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,145 @@
+.comments-keeper {
+    max-width: 752px;
+    margin-right: 40px;
+}
+
+.comments-count {
+    margin-left: 16px;
+    font-weight: 500;
+    color: #939393;
+}
+
+.comments-add {
+    padding: 14px 20px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    width: 100%;
+    resize: none;
+    border: 2px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.comments-buttons {
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.comments-buttons > button {
+    background: transparent;
+    padding: 0;
+    margin: 0 16px 0 0;
+    font-weight: 500;
+    color: #2e2e2e
+}
+
+.comments-block hr {
+    margin: 16px 0;
+    width: 100%;
+}
+
+button.comments-cancel {
+    color: #939393
+}
+
+.comment-header {
+    margin-bottom: 16px;
+}
+
+.comment-date {
+    font-weight: 500;
+    color: #939393;
+    margin-left: 16px;
+}
+
+.comment__show-more {
+    font-weight: 500;
+    color: #939393;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.comment.comment-reply {
+    margin-left: 56px;
+}
+
+.comment-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment-avatar {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.comment__reply-keeper {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.comment__reply-keeper > div{
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    margin-right: 42px;
+}
+.comment__reply-keeper > .like,
+.comment__reply-keeper > .dislike {
+    color: #939393
+}
+
+.comment__actions{
+    margin-right: 0;
+}
+.comment__reply-keeper > .displike{
+    margin-right: 29px;
+}
+
+.comment__reply-keeper > div > button{
+    background: transparent;
+    width: 16px;
+    height: 16px;
+    margin-top: -3px;
+    margin-right: 4px;
+}
+.comment__reply-keeper img.dark {
+    display: none
+}
+.comment__actions {
+    border-left: 1px solid #E8E8E8;
+    padding: 0 16px;
+}
+
+.comment__action {
+    margin-right: 16px;
+}
+
+.comment__action:last-child {
+    margin-right: 0;
+}
+
+.comment__reply-count {
+    font-weight: 500;
+    color: #939393;
+}
+
+div.comment__reply-input {
+    min-width: 100%;
+    display: block;
+}
+
+.comment__reply-input > .comments-add {
+    margin: 16px 0;
+}
+@media screen and (max-width: 1114px) {
+    .cart-slider {
+        margin-right: 0;
+    }
+}
+
+

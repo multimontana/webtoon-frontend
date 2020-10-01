@@ -1,0 +1,157 @@
+.cart-episodes {
+    max-width: 864px;
+    background: #FFF;
+    border-radius: 9px;
+    margin-left: 30px;
+}
+
+.cart-episodes > img {
+    width: 100%;
+    height: 224px;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 9px 9px 0 0;
+}
+
+.cart-episodes-content {
+    padding: 32px;
+}
+
+.cart-episodes-content > article {
+    font-weight: 500;
+}
+
+.cart-episodes-content .show-more {
+    margin-top: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #939393;
+}
+
+.cart-episodes-content hr {
+    margin: 16px 0;
+}
+
+.cart-buttons {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.cart-buttons .button-keeper {
+    display: flex;
+}
+
+.cart-buttons .button-keeper button {
+    padding: 8px 0;
+    width: 182px;
+    margin-right: 8px;
+}
+
+.cart-buttons .button-keeper button:last-child {
+    margin-right: 0;
+}
+
+.social-buttons {
+    display: flex;
+}
+
+.social-buttons a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.social-buttons a .dark-social {
+    display: none;
+}
+
+.social-buttons .save-bookmark {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    line-height: 13px;
+    border-color: #2e2e2e;
+}
+
+.social-buttons .save-bookmark svg {
+    margin-right: 4px;
+}
+
+.episode-list {
+    max-height: 649px;
+    width: 100%;
+}
+
+.cart-episodes .cart-list {
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    max-height: 649px;
+}
+
+.cart-episodes .cart-list li{
+    display: flex;
+    align-items: center;
+    height: 81px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #E8E8E8;
+    margin-right: 12px;
+}
+
+.cart-episodes .cart-list li.active{
+    background: #FAFAFA;
+}
+
+.cart-episodes .cart-list li .cart-image{
+    width: 64px;
+    height: 100%;
+    margin-right: 16px;
+    position: relative;
+}
+
+.cart-episodes .cart-list li .cart-image .locked{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cart-episodes .cart-list li .cart-image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 3px;
+}
+
+.cart-episodes .cart-list li .cart-number{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #939393;
+    margin-right: 24px;
+}
+
+.cart-episodes .cart-list li .cart-title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cart-episodes .cart-list li .cart-date {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #939393;
+}
+
+.cart-episodes .cart-list li:first-child {
+    border-top: 1px solid #E8E8E8
+}

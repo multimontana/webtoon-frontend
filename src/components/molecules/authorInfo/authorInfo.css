@@ -1,0 +1,17 @@
+
+.author-image{
+    width: 192px;
+    height: 192px;
+    border-radius: 3px;
+}
+
+.author-info {
+    min-width: 308px;
+}
+
+.author-info h5 {
+    margin-top: 32px;
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #939393
+}

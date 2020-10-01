@@ -1,0 +1,509 @@
+body {
+    position: relative;
+    height: 100vh;
+    /*width: 100vw;*/
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: none;
+    /*display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;*/
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #45454590;
+}
+.publication-modal {
+    display: flex!important;
+}
+.episode-modal {
+    display: flex!important;
+}
+.modal-overflow {
+    width: 352px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 32px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    position: relative;
+    background-color: #FFF;
+}
+
+.modal-overflow h5 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.modal-overflow h5 hr {
+    width: 56px;
+    margin: 0;
+}
+
+.modal-overflow button:not(.close-modal) {
+    width: 100%;
+    padding: 14px 0;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+}
+
+.modal-overflow .btn-light:not(.close-modal) {
+    border: 2px solid #2E2E2E;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.social-login a img {
+    width: 48px;
+    height: 48px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin-right: 16px;
+}
+
+.social-login a:last-child img {
+    margin-right: 0;
+}
+
+.close-modal {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Reg form*/
+
+.modal-overflow .agreement {
+    font-weight: 500;
+    color: #939393;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.modal-overflow .agreement a {
+    font-weight: 600;
+    color: #2e2e2e
+}
+
+.registration-form-modal input, .login-form-modal input {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.registration-form-modal input:last-child, .login-form-modal input:last-child {
+    margin-bottom: 12px;
+}
+
+.registration-form-modal h3, .login-form-modal h3 {
+    margin-bottom: 24px;
+}
+
+.registration-form-modal form button, .login-form-modal form button {
+    width: 100%;
+    padding-top: 14px 0;
+    margin-bottom: 16px;
+}
+
+.registration-form-modal form .login, .login-form-modal form .login {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #939393;
+}
+
+
+/*Login form*/
+
+.forgot_pass {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+    font-weight: 500;
+    color: #939393;
+}
+
+/*Forgot-password*/
+
+.forgot-password {
+    text-align: center;
+}
+
+.forgot-password input, .forgot-password form, .forgot-password button:not(.close-modal) {
+    width: 100%;
+}
+
+.forgot-password h4 {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.login-reg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #939393;
+}
+
+.login-reg > a:first-child {
+    margin-right: 12px;
+}
+
+.forgot-password .btn-green {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+/*Email sent*/
+
+.email-sent {
+    text-align: center;
+}
+
+.email-sent .btn-green {
+    margin-top: 24px;
+}
+
+/*New Password*/
+
+.new-pass h3 {
+    margin-bottom: 24px;
+}
+
+.new-pass .btn-green {
+    margin-top: 24px;
+}
+
+.new-pass form {
+    width: 100%;
+}
+
+.new-pass form input {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.new-pass form input:last-of-type {
+    margin-bottom: 0;
+}
+
+/*Payment method */
+
+.payment-modal h3 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 24px;
+}
+
+.payment-modal .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.payment-modal .form-group label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.payment-modal .form-group input {
+    width: 100%;
+    line-height: 100%;
+}
+
+.payment-modal .form-group span {
+    align-self: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.payment-modal .btn-blue {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    background: #0070BA;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.payment-modal small {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A3A3A3;
+}
+
+/*Purchase modal*/
+
+.purchase .modal-overflow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.purchase h3 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: #2E2E2E;
+}
+
+.purchase h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 4px 0 8px;
+}
+
+.purchase-info {
+    margin: 24px 0;
+}
+
+.purchase-info > span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #939393;
+}
+
+.purchase-price {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.purchase-price span:not(.purchase-discount) {
+    color: #939393;
+}
+
+.purchase-author {
+    text-align: left;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 24px;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.purchase-author > span {
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #939393;
+}
+
+/*Replenishment modal*/
+
+.replenishment-time {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.replenishment-title {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 24px 0 4px;
+}
+.replenishment-method {
+    font-weight: 500;
+    color: #939393;
+}
+.replenishment h4 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+.replenishment h4.success {
+    color: #62CF29;
+}
+
+.replenishment-price {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 4px;
+}
+
+.replenishment-price span{
+    color: #939393;
+}
+
+.replenishment-price ~ span{
+    font-weight: 500;
+    color: #939393
+}
+
+/*Withdrawal modal*/
+
+.withdrawal-time {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.withdrawal-title {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 24px 0 4px;
+}
+.withdrawal-method {
+    font-weight: 500;
+    color: #939393;
+}
+.withdrawal h4 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+.withdrawal h4.success {
+    color: #62CF29;
+}
+
+.withdrawal-price {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 4px;
+}
+
+.withdrawal-price ~ span{
+    font-weight: 500;
+    color: #939393
+}
+
+
+/*Publication Modals*/
+
+.publication-modal {
+    text-align: center
+}
+
+.publication-modal h3 {
+    margin-bottom: 16px;
+}
+
+.publication-modal .modal-overflow {
+    width: 416px;
+}
+
+.publication-modal .modal-overflow .btn-green {
+    align-items: center;
+    width: auto;
+    padding: 14px 46px;
+    margin-top: 24px;
+}
+
+.episode-modal {
+    text-align: center
+}
+
+.episode-modal h3 {
+    margin-bottom: 16px;
+}
+
+.episode-modal .modal-overflow {
+    width: 416px;
+}
+
+.episode-modal .modal-overflow .button-keeper {
+    display: flex;
+}
+
+.episode-modal .modal-overflow .button-keeper button {
+    align-items: center;
+    width: auto;
+    padding: 14px 28px;
+    margin-top: 24px;
+    margin-right: 8px;
+    height: 48px;
+}
+
+.episode-modal .modal-overflow .button-keeper button:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+    border: 2px solid #D8D8D8;
+}

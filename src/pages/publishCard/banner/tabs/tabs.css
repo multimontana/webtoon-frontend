@@ -1,0 +1,617 @@
+section.episodes-sec {
+    max-width: 864px;
+    margin: 64px auto;
+}
+
+.episodes-sec > .episode_block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.episodes-sec .form-keeper {
+    max-width: 640px;
+    width: 100%;
+}
+
+.episodes-sec label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E2E2E;
+    margin-bottom: 4px;
+}
+
+.episodes-sec .form-keeper .form-element {
+    margin-top: 16px;
+}
+
+.episodes-sec .form-keeper .form-element:first-child {
+    margin-top: 0!important;
+}
+
+.episodes-sec .form-keeper > .form-element:first-of-type {
+    margin-top: 48px;
+}
+
+.episodes-sec .form-keeper .form-element:not(.form-checkbox) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%
+}
+
+.episodes-sec .form-keeper .form-element textarea {
+    width: 100%;
+    min-height: 144px;
+    resize: none;
+}
+
+.episodes-sec .form-keeper .form-element input,
+.episodes-sec .form-keeper .form-element textarea{
+    margin-bottom: 16px;
+}
+
+.episodes-sec .form-keeper .form-element input:last-child,
+.episodes-sec .form-keeper .form-element textarea:last-child{
+    margin-bottom: 0;
+}
+
+.episodes-sec .form-keeper .form-element.form-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.episodes-sec .form-keeper .form-element.form-checkbox label {
+    order: 2;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.episodes-sec .form-keeper .form-element.form-checkbox label a {
+    text-decoration: underline;
+}
+
+.episodes-sec .form-keeper .form-element.form-checkbox input {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    padding: 6px;
+    margin-right: 8px;
+}
+
+.episodes-sec .form-keeper .form-element.form-checkbox input:checked:after {
+    content: '';
+    background: url(../../../../assets/img/icons/Chek_icon.svg) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+}
+
+.episodes-sec .form-keeper .form-element input {
+    width: 100%
+}
+
+.episodes-sec .form-keeper .button-keeper {
+    margin-top: 24px;
+    display: flex;
+}
+
+.episodes-sec .avatar-keeper {
+    max-width: 192px;
+    width: 100%;
+}
+
+.episodes-sec .avatar-keeper .form-avatar {
+    width: 100%;
+    height: 192px;
+    position: relative;
+}
+
+.episodes-sec .avatar-keeper .form-avatar .image-keeper {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 2px dashed #E8E8E8;
+}
+
+.episodes-sec .avatar-keeper .form-avatar .image-keeper img[src]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.episodes-sec .avatar-keeper .form-avatar .button-keeper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 6px;
+}
+
+.episodes-sec .avatar-keeper .form-avatar .button-keeper .avatar-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.episodes-sec .avatar-keeper .form-avatar .avatar-limits {
+    display: block;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #939393;
+}
+
+
+
+
+
+
+
+
+.episodes-sec .form-keeper .form-banner {
+    width: 100%;
+    height: 198px;
+    position: relative;
+}
+
+.episodes-sec .form-keeper .form-banner .image-keeper {
+    width: 100%;
+    height: calc(100% - 32px);
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 2px dashed #E8E8E8;
+}
+
+.episodes-sec .form-keeper .form-banner .image-keeper img[src]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.episodes-sec .form-keeper .form-banner .button-keeper {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 32px);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 6px;
+    margin-top: 0;
+}
+
+.episodes-sec .form-keeper .form-banner .button-keeper .banner-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.episodes-sec .form-keeper .form-banner .banner-limits {
+    display: block;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #939393;
+}
+
+/*Dark mode*/
+
+body.dark-mode .episodes-sec label {
+    color: #FFF;
+}
+
+body.dark-mode .episodes-sec .form-keeper .form-element.form-checkbox input {
+    border-color: #454545
+}
+
+body.dark-mode .image-keeper {
+    border-color: #454545!important
+}
+
+body.dark-mode .button-keeper button {
+    border: 2px solid #939393;
+}
+
+body.dark-mode .button-keeper div {
+    border: 2px solid #939393!important
+}
+
+body.dark-mode .button-keeper div svg * {
+    fill: white!important
+}
+
+body.dark-mode .episodes-sec .form-keeper .form-element.form-checkbox input:checked:after {
+    content: '';
+    background: url(../../../../assets/img/icons/Chek_dark_icon.svg) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+}
+
+.episodes-sec .form-keeper .button-keeper button {
+    margin-right: 8px;
+    padding: 14px 37px;
+    border-radius: 24px;
+}
+
+.episodes-sec .form-keeper .form-element.form-selects {
+    flex-direction: row;
+    margin-right: -32px;
+    width: calc(100% + 32px)
+}
+
+.episodes-sec .form-keeper .form-selects > div {
+    height: 48px;
+    width: calc(33% - 32px);
+    margin-right: 32px;
+}
+
+.episodes-sec .form-keeper .form-selects .select-selected {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.episodes-sec .form-keeper .form-element.form-selects + .form-element.form-checkbox {
+    margin-top: 24px;
+}
+
+.episodes-sec .page-keeper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -32px;
+    width: calc(100% + 32px);
+}
+
+.episodes-sec .page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(20% - 32px);
+    margin-right: 32px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.episodes-sec .page > img{
+    width: 100%;
+    height: 120px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.episodes-sec .page > .delete-page {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+
+.episodes-sec .page .page-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.episodes-sec .page .page-size {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #939393;
+}
+
+/*
+   Banner Section
+ */
+section.proizvedeniya-sec {
+    max-width: 864px;
+    margin: 64px auto;
+}
+
+.proizvedeniya-sec > .proizvedeniya-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.proizvedeniya-sec .form-keeper {
+    max-width: 640px;
+    width: 100%;
+}
+
+.proizvedeniya-sec label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E2E2E;
+    margin-bottom: 4px;
+}
+
+.proizvedeniya-sec .form-keeper .form-element {
+    margin-top: 16px;
+}
+
+.proizvedeniya-sec .form-keeper .form-element:first-child {
+    margin-top: 0;
+}
+
+.proizvedeniya-sec .form-keeper > .form-element:first-of-type {
+    margin-top: 48px;
+}
+
+.proizvedeniya-sec .form-keeper .form-element:not(.form-checkbox) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%
+}
+
+.proizvedeniya-sec .form-keeper .form-element textarea {
+    width: 100%;
+    min-height: 144px;
+    resize: none;
+}
+
+.proizvedeniya-sec .form-keeper .form-element input,
+.proizvedeniya-sec .form-keeper .form-element textarea{
+    margin-bottom: 16px;
+}
+
+.proizvedeniya-sec .form-keeper .form-element input:last-child,
+.proizvedeniya-sec .form-keeper .form-element textarea:last-child{
+    margin-bottom: 0;
+}
+
+.proizvedeniya-sec .form-keeper .form-element.form-checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.proizvedeniya-sec .form-keeper .form-element.form-checkbox label {
+    order: 2;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.proizvedeniya-sec .form-keeper .form-element.form-checkbox label a {
+    text-decoration: underline;
+}
+
+.proizvedeniya-sec .form-keeper .form-element.form-checkbox input {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    padding: 6px;
+    margin-right: 8px;
+}
+
+.proizvedeniya-sec .form-keeper .form-element.form-checkbox input:checked:after {
+    content: '';
+    background: url(../../../../assets/img/icons/Chek_icon.svg) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+}
+
+.proizvedeniya-sec .form-keeper .form-element input {
+    width: 100%
+}
+
+.proizvedeniya-sec .form-keeper .button-keeper {
+    margin-top: 24px;
+    display: flex;
+}
+
+.proizvedeniya-sec .avatar-keeper {
+    max-width: 192px;
+    width: 100%;
+}
+
+.proizvedeniya-sec .avatar-keeper .form-avatar {
+    width: 100%;
+    height: 264px;
+    position: relative;
+}
+
+.proizvedeniya-sec .avatar-keeper .form-avatar .image-keeper {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 2px dashed #E8E8E8;
+}
+
+.proizvedeniya-sec .avatar-keeper .form-avatar .image-keeper img[src]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.proizvedeniya-sec .avatar-keeper .form-avatar .button-keeper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 6px;
+}
+
+.proizvedeniya-sec .avatar-keeper .form-avatar .button-keeper .avatar-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proizvedeniya-sec .avatar-keeper .form-avatar .avatar-limits {
+    display: block;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #939393;
+}
+
+.proizvedeniya-sec .form-keeper .form-banner {
+    width: 100%;
+    height: 198px;
+    position: relative;
+}
+
+.proizvedeniya-sec .form-keeper .form-banner .image-keeper {
+    width: 100%;
+    height: calc(100% - 32px);
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 2px dashed #E8E8E8;
+}
+
+.proizvedeniya-sec .form-keeper .form-banner .image-keeper img[src]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.proizvedeniya-sec .form-keeper .form-banner .button-keeper {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 32px);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 6px;
+    margin-top: 0;
+}
+
+.proizvedeniya-sec .form-keeper .form-banner .button-keeper .banner-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proizvedeniya-sec .form-keeper .form-banner .banner-limits {
+    display: block;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #939393;
+}
+
+/*Dark mode*/
+
+
+.proizvedeniya-sec .form-keeper .button-keeper button {
+    margin-right: 8px;
+    padding: 14px 37px;
+    border-radius: 24px;
+}
+
+.proizvedeniya-sec .form-keeper .form-element.form-selects {
+    flex-direction: row;
+    margin-right: -32px;
+    width: calc(100% + 32px)
+}
+
+.proizvedeniya-sec .form-keeper .form-selects .select-selected {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.proizvedeniya-sec .form-keeper .form-selects > div {
+    width: calc(33% - 32px);
+    margin-right: 32px;
+}
+
+.proizvedeniya-sec .form-keeper .form-element.form-selects + .form-element.form-checkbox {
+    margin-top: 24px;
+}
+.banner_img_input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.vs__selected-options {
+    height: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

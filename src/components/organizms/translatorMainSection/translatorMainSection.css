@@ -1,0 +1,10 @@
+.page__main-sec {
+    background: #FAFAFA;
+    padding: 64px 64px 72px 64px;
+}
+
+.translator-keeper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

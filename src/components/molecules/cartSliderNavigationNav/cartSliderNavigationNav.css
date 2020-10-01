@@ -1,0 +1,8 @@
+.cart-keeper {
+    position: relative;
+}
+
+.cart-navigation {
+    display: flex;
+    align-items: center;
+}

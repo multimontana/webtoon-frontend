@@ -1,0 +1,66 @@
+section.share-episode {
+    background: #FAFAFA;
+    margin: 0 0 64px 0;
+    padding: 64px 0;
+}
+
+.share-episode > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.share-episode > .container > h5 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #939393
+}
+
+.share-socials button {
+    width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.share-socials button:last-child {
+    margin-right: 0;
+}
+
+.share-socials button .dark-social {
+    display: none;
+}
+
+.share-socials {
+    display: flex;
+}
+
+.share-actions {
+    display: flex;
+}
+
+.share-actions button {
+    border-radius: 24px;
+    padding: 14px 20px;
+}
+
+.share-actions button > svg {
+    margin-right: 6px;
+}
+
+.share-actions button > span {
+    line-height: 13px;
+}
+
+.share-actions .save-episode {
+    background: transparent;
+    border: 2px solid #2E2E2E;
+    box-sizing: border-box;
+}
+
+.share-actions .like-episode {
+    background: linear-gradient(225deg, #5ED126 0%, #8ABA43 100%);
+    color: white;
+    margin-left: 8px;
+}

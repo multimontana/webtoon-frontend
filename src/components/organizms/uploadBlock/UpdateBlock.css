@@ -1,0 +1,131 @@
+.upload {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-gap: 32px;
+    padding-top: 32px;
+}
+
+.upload__image-keeper {
+    position: relative;
+}
+
+.upload__image {
+    width: 100%;
+    height: 120px;
+    border-radius: 6px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.upload__like-keeper {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    background: linear-gradient(225deg, #5ED126 0%, #8ABA43 100%);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 2px 4px;
+    height: 24px;
+}
+
+.upload__like-keeper > span {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    margin-top: 2.5px;
+}
+
+.upload__like-icon {
+    min-width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.upload__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.upload__genre {
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+
+/*Genre colors*/
+
+.upload__genre_brown {
+    color: #965801;
+}
+
+.upload__genre_blue {
+    color: #3E47EF;
+}
+
+.upload__genre_green {
+    color: #82CF3A;
+}
+
+.upload__genre_orange {
+    color: #FC9603;
+}
+
+.upload__genre_cyan {
+    color: #1AA5ED;
+}
+
+.upload__genre_pink {
+    color: #CD377B;
+}
+
+.upload__genre_purple {
+    color: #8B00E9;
+}
+
+/*End of genre colors*/
+
+.upload__upload-keeper {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+
+.upload__upload-keeper {
+    border: 1px dashed #6938A8;
+    border-radius: 6px;
+}
+
+.upload__upload-keeper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 56px;
+}
+
+.upload__upload-title {
+    margin: 16px 0;
+}
+
+.upload__upload-text {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.upload__upload-button {
+    width: 171px;
+    height: 48px;
+}
+
+@media screen and (max-width: 1280px) {
+    .upload {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-gap: 32px;
+    }
+}

@@ -1,0 +1,339 @@
+.translations-list {
+    padding-top: 64px;
+}
+
+.translations-list,
+.translations-list-keeper .pagination {
+    max-width: 864px;
+    margin: 0 auto;
+}
+
+.translations-list-keeper .pagination {
+    margin-top: 24px;
+}
+
+.translations-list > button {
+    margin-bottom: 24px;
+}
+
+.translations-item {
+    min-height: 113px;
+    padding: 16px 0;
+    border-bottom: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.translations-item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    background: transparent;
+    border-radius: 9px;
+    z-index: -1;
+    transform-origin: center;
+    transform: scaleY(0);
+}
+
+.translations-item:hover:after {
+    background: #FAFAFA;
+    transform: scaleY(1);
+}
+
+.translations-item:first-of-type {
+    border-top: 1px solid #E8E8E8;
+}
+
+.translations-item .translation-description {
+    display: flex;
+}
+
+.translations-item .translation-description > img {
+    max-width: 80px;
+    max-height: 111px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 32px;
+    border-radius: 3px;
+}
+
+.translations-item .translation-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.translations-item .genres > a {
+    margin-right: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #939393
+}
+
+.translations-item .genres > a.active {
+    color: #3ACF9D
+}
+
+.translations-item .title {
+    margin: 4px 0;
+}
+
+.translations-item .status-keeper > span:first-child {
+    margin-right: 16px;
+}
+
+.translations-item .status-keeper > .success {
+    color: #82CF3A;
+}
+
+.translations-item .status-keeper > .review {
+    color: #FC9603;
+}
+
+.translations-item .status-keeper > .denied {
+    color: #FF3333
+}
+
+.translations-item .ratings {
+    display: flex;
+    margin-top: 19px;
+}
+
+.translations-item .ratings > span {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.translations-item .ratings > span > img {
+    margin-right: 4px;
+}
+
+.translations-item .description-keeper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.translations-item .translation-information > span {
+    padding: 6px 37px;
+    font-size: 14px;
+    line-height: 20px;
+    background: transparent;
+}
+
+.translations-item .translation-information > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.translations-item .translation-information > div > span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.translations-item .translation-information > div > span:first-child {
+    color: #939393
+}
+
+.translations-item .comment {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+    color: #939393;
+}
+
+.translations-list-keeper .pagination {
+    justify-content: flex-start;
+}
+
+.translations-list-keeper {
+    margin-bottom: 64px;
+}
+
+body.dark-mode .translations-item {
+    border-color: #454545
+}
+
+body.dark-mode .translation-information .btn-dark {
+    border: 2px solid #939393;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: transparent;
+}
+
+body.dark-mode .translations-item:hover:after {
+    background: #454545;
+    transform: scaleY(1);
+}
+
+.language-links {
+    padding: 24px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #D8D8D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-links > a {
+    margin-right: 64px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: #939393;
+}
+
+.language-links > a.active {
+    color: #2e2e2e;
+}
+
+.language-links > a:last-child {
+    margin-right: 0;
+}
+
+body.dark-mode .language-links {
+    border-color: #454545;
+}
+
+body.dark-mode .language-links > a.active {
+    color: #FFF
+}
+.pagination button {
+    width: 36px;
+    height: 36px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #D8D8D8;
+    margin-right: 12px;
+    background: transparent
+}
+
+.pagination button.active {
+    background: #2E2E2E;
+    border-color: #2E2E2E;
+    color: white;
+}
+
+.pagination .prev-button {
+    margin-right: 0;
+}
+
+.pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.pagination .pages {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.pagination .pages .page {
+    padding-top: 2px;
+}
+
+body.dark-mode .pagination button:not(.active) {
+    border: 2px solid #939393;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+}
+
+body.dark-mode .pagination button:not(.active) svg * {
+    fill: white;
+}
+
+body.dark-mode .pagination button.active {
+    background: #FFFFFF;
+    color: #2e2e2e;
+    border: 2px solid white;
+}
+.paginate_block {
+    display: flex;
+
+}
+.paginate_block li {
+    margin-left: 2px;
+    width: 36px;
+    height: 36px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #D8D8D8;
+    margin-right: 8px;
+    background: transparent;
+    display: flex;justify-content: center;
+    align-items: center;
+
+}
+.paginate_block li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginate_block li:nth-child(1) a {
+    width: auto;
+}
+.paginate_block li:last-child a {
+    width: auto;
+}
+.paginate_block li:nth-child(1) {
+    margin-right: 8px;
+    width: 36px;
+    height: 36px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+}
+
+.paginate_block li:last-child {
+    margin-left: 8px;
+    width: 36px;
+    height: 36px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+}
+.paginate_block li.active {
+    background: #2E2E2E;
+    border-color: #2E2E2E;
+    color: white;
+}

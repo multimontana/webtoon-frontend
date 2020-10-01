@@ -1,0 +1,10 @@
+.cart-keeper > .container-margin{
+    overflow: hidden;
+    /*margin-right: -64px;*/
+    /*margin-left: 48px;*/
+    margin-left: 64px;
+}
+
+.genre {
+    margin-top: 40px;
+}

@@ -1,0 +1,159 @@
+header {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+header > div, .episod-menu__keeper {
+    display: flex;
+    align-items: center;
+}
+
+.episod-menu__keeper {
+    padding-right: 16px;
+    margin-right: 16px;
+    border-right: 1px solid #e8e8e8
+}
+
+.toggle-episodes-menu {
+    width: 36px;
+    height: 36px;
+    margin-left: 16px;
+}
+
+.prev-episode > button {
+    margin-right: 16px;
+}
+
+.episode-nav .current-page {
+    margin: 0 16px;
+}
+
+.content-section {
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden
+}
+
+.content-section .page {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.content-section .page > img {
+    width: 864px;
+    height: 1260px;
+}
+
+.content-section .episode-nav {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.content-section .menu {
+    height: 708px;
+    width: 436px;
+    position: absolute;
+    right: -480px;
+    margin-left: 32px;
+    padding-right: 20px;
+}
+.content-section .menu.active {
+    position: static;
+}
+.content-section .menu > .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8E8;
+    margin-right: 20px;
+}
+
+.content-section .menu .cart-list {
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+.content-section .menu .cart-list li{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #E8E8E8;
+    margin-right: 12px;
+}
+
+.content-section .menu .cart-list li.active{
+    background: #FAFAFA;
+}
+
+.content-section .menu .cart-list li .cart-image{
+    width: 64px;
+    height: 100%;
+    margin-right: 16px;
+    position: relative;
+}
+
+.content-section .menu .cart-list li .cart-image .locked{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-section .menu .cart-list li .cart-image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 3px;
+}
+
+.content-section .menu .cart-list li .cart-number{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #939393;
+    margin-right: 24px;
+}
+
+.content-section .menu .cart-list li .cart-title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.content-section .menu .cart-list li .cart-date {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #939393;
+}
+
+.content-section .menu .title .close-menu {
+    width: 36px;
+    height: 36px;
+}
+
+.menu-button__keeper {
+    position: absolute;
+    right: 0;
+    bottom: 51px;
+    /*bottom: 163px;*/
+}
+
+.menu-button__keeper > button {
+    margin-left: 0;
+}
+
+.menu-button__keeper > .toggle-episodes-menu {
+    margin:0 25px 63px 0;
+}
