@@ -1,0 +1,17 @@
+.language-changer {
+    /*-webkit-transform: translateY(-50%);*/
+    /*-ms-transform: translateY(-50%);*/
+    /*-o-transform: translateY(-50%);*/
+    /*transform: translateY(-50%);*/
+}
+
+.language-changer .header__language {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+.language-changer select{
+    border-radius: 20px;
+    padding: 6px 12px;
+    border: 2px solid #D8D8D8;
+}

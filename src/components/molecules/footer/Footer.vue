@@ -33,13 +33,7 @@
     </div>
     <div class="footer-logo">
       <img src="../../../assets/img/logo.svg" alt="Manga">
-      <div class="custom-select custom-select-rounded">
-        <select name="language" id="language-select">
-          <option value="ru">RU</option>
-          <option value="en">EN</option>
-          <option value="en">EN</option>
-        </select>
-      </div>
+       <Language/>
     </div>
     <div class="privacy-policy">
       <a href="">
@@ -60,9 +54,10 @@
 </template>
 <script>
 import ScrollUp from '../../atoms/scrollUp/ScrollUp'
+import Language from '../../atoms/language/Language'
 export default {
   name: 'Footer',
-  components: { ScrollUp }
+  components: { Language, ScrollUp }
 }
 </script>
 
