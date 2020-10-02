@@ -62,7 +62,7 @@ section.genre {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto 32px auto 32px auto 32px auto 32px auto 32px auto;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-gap: 32px;
 }
 
@@ -71,6 +71,6 @@ section.genre {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: auto 32px auto 32px auto 32px auto 32px auto;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
     }
 }

@@ -2,11 +2,11 @@
     <div class="recomended-carts">
         <ul class="cart-list">
             <h3 class="cart-list__title">Похожее</h3>
-          <CartItem :episodes="episodes"/>
+          <CartItem  v-for="(episode, index) in episodes" :episode="episode" :key="index"/>
         </ul>
         <ul class="cart-list">
             <h3 class="cart-list__title">Популярное</h3>
-            <CartItem :episodes="episodes"/>
+            <CartItem  v-for="(episode, index) in episodes" :episode="episode" :key="index"/>
         </ul>
     </div>
 </template>

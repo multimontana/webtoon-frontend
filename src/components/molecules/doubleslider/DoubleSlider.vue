@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <!--    <VueSlickCarousel :options="slickOptions">-->
-    <hooper group="sliderGroup" class="main-slider" :settings="bigSlider()">
+    <hooper group="sliderGroup" class="main-slider" :settings="bigSlider()" >
       <slide class="main-cart-item">
         <div class="main-cart-image">
           <img src="../../../assets/img/CartImages/image1.jpg">

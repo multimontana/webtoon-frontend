@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <div class="cart-item cart-item-margin"  v-for="(episode, index) in episodes" :key="index" >
+        <div class="cart-item cart-item-margin">
             <div class="cart-image">
                 <img :src="episode.images">
                 <div class="cart-item__like-count">
@@ -13,14 +12,13 @@
                 <h4 class="cart-title">{{ episode.creators}}</h4>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'CartItem',
-  props: ['episodes'],
+  props: ['episode'],
   data () {
     return {
       data: {

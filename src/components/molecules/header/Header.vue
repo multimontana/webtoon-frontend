@@ -2,12 +2,14 @@
  <header>
   <div class="navigation">
     <div class="logo">
-      <img src="../../../assets/img/logo.svg" alt="Manga">
+      <router-link to="/" class="nav__link">
+        <img src="../../../assets/img/logo.svg" alt="Manga">
+      </router-link>
     </div>
     <div class="nav">
-      <a href="" class="nav__link">Новое</a>
-      <a href="" class="nav__link">Популярное</a>
-      <a href="" class="nav__link">Жанры</a>
+      <router-link to="/items" class="nav__link">Новое</router-link>
+      <router-link to="/popular" class="nav__link">Популярное</router-link>
+      <router-link to="/genres" class="nav__link">Жанры</router-link>
     </div>
   </div>
   <div class="action-btns">
