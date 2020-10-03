@@ -98,11 +98,12 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex'
-import 'vue-select/dist/vue-select.css'
+import { mapActions, mapGetters } from 'vuex';
+import 'vue-select/dist/vue-select.css';
+
 export default {
   name: 'AddBanner',
-  data () {
+  data() {
     return {
       banner: {
         name: '',
@@ -111,58 +112,60 @@ export default {
         category: '',
         category1: '',
         category2: '',
-        language: ''
+        language: '',
       },
       garanture: '',
       accept_conditions: '',
       category_options: [],
-      language_options: ['EN', 'RU']
-    }
+      language_options: ['EN', 'RU'],
+    };
   },
   computed: {
-    ...mapGetters(['getAuthToken'])
+    ...mapGetters(['getAuthToken']),
   },
   methods: {
     ...mapActions(['getCategoriesAction', 'createPostAction']),
-    onFileChange (e, type) {
-      var files = e.target.files || e.dataTransfer.files
-      if (!files.length) { return }
-      this.createImage(files[0], type)
+    onFileChange(e, type) {
+      const files = e.target.files || e.dataTransfer.files;
+      if (!files.length) { return; }
+      this.createImage(files[0], type);
     },
-    createImage (file, type) {
-      var reader = new FileReader()
-      var vm = this
+    createImage(file, type) {
+      const reader = new FileReader();
+      const vm = this;
       reader.onload = (e) => {
         if (type === 'background') {
-          this.banner.background = file
-          vm.$refs.banner_background.src = e.target.result
+          this.banner.background = file;
+          vm.$refs.banner_background.src = e.target.result;
         } else {
-          this.banner.image = file
-          vm.$refs.banner_image.src = e.target.result
+          this.banner.image = file;
+          vm.$refs.banner_image.src = e.target.result;
         }
-      }
-      reader.readAsDataURL(file)
+      };
+      reader.readAsDataURL(file);
     },
-    goBack () {
+    goBack() {
       this.$router.push({
-        path: '/'
-      })
+        path: '/',
+      });
     },
-    createPost () {
-      this.createPostAction({ banner: this.banner, token: this.getAuthToken }).then(res => {
+    createPost() {
+      this.createPostAction({ banner: this.banner, token: this.getAuthToken }).then((res) => {
         if (res && !res.error) {
-          console.log(res)
-          this.$emit('bannerAdded')
+          console.log(res);
+          this.$emit('bannerAdded');
         }
-      })
-    }
+      });
+    },
   },
-  created () {
-    this.getCategoriesAction({ token: this.getAuthToken, language_id: 1, page: 1, limit: 10 }).then((res) => {
-      this.category_options = res.results
-    })
-  }
-}
+  created() {
+    this.getCategoriesAction({
+      token: this.getAuthToken, language_id: 1, page: 1, limit: 10,
+    }).then((res) => {
+      this.category_options = res.results;
+    });
+  },
+};
 </script>
 
 <style scoped>
