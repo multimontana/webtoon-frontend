@@ -2,7 +2,7 @@
     <section class="upload-your-own download-links">
         <div class="container">
             <div class="upload-content">
-                <h3 class="upload-title">Скачать, чтобы читать истории, куда бы вы ни пошли</h3>
+                <h3 class="upload-title">{{ $t('download_to_read_stories') }}</h3>
                 <div class="download-links">
                     <a href=""><img src="../../../assets/img/app_store.svg"></a>
                     <a href=""><img src="../../../assets/img/google_play.svg"></a>

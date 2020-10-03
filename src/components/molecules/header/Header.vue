@@ -8,8 +8,8 @@
     </div>
     <div class="nav">
       <router-link to="/items" class="nav__link">{{ $t('new') }}</router-link>
-      <router-link to="/popular" class="nav__link">Популярное</router-link>
-      <router-link to="/genres" class="nav__link">Жанры</router-link>
+      <router-link to="/popular" class="nav__link">{{ $t('popular') }}</router-link>
+      <router-link to="/genres" class="nav__link">{{ $t('genres') }}</router-link>
     </div>
   </div>
   <div class="action-btns">
@@ -41,7 +41,7 @@
     <div class="header-acton-divider">
     </div>
     <button class="add-button btn-dark btn-sm">
-      +  <router-link to="/publish"> Добавить</router-link>
+      +  <router-link to="/publish">{{ $t('add') }}</router-link>
 
     </button>
     <div class="account" v-if="getAuthToken">
@@ -53,7 +53,7 @@
       </div>
     </div>
     <div class="account" v-if="getAuthToken === ''">
-      <button @click="sign_in()">Войти</button>
+      <button @click="sign_in()">{{ $t('sign_in') }}</button>
     </div>
   </div>
 </header>
