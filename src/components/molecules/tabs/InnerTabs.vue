@@ -8,15 +8,15 @@
 export default {
   name: 'InnerTabs',
   props: ['tabs'],
-  data () {
+  data() {
     return {
-      active_tab: ''
-    }
+      active_tab: '',
+    };
   },
-  mounted () {
-    this.active_tab = this.$router.currentRoute.path
-  }
-}
+  mounted() {
+    this.active_tab = this.$router.currentRoute.path;
+  },
+};
 </script>
 
 <style scoped>
