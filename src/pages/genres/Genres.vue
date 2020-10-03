@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import GenreMainSection from '../../components/organizms/genreMainSection /GenreMainSection'
+import GenreMainSection from '../../components/organizms/genreMainSection/GenreMainSection'
 import SectionGenreContainer from '../../components/organizms/sectionGenreContainer/SectionGenreContainer'
 
 export default {
