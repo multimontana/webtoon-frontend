@@ -10,11 +10,11 @@
                     </linearGradient>
                 </defs>
             </svg>
-            <h2 class="upload__upload-title">Загрузить <br> свой проект</h2>
+            <h2 class="upload__upload-title" v-html="$t('download_your_project')"></h2>
             <article class="upload__upload-text">
-                Присоединяйтесь к нашему сообществу авторов и делитесь своей работой с миллионами поклонников!
+                {{ $t('join_our_community') }}
             </article>
-            <button class="btn btn-green upload__upload-button">Добавить проект</button>
+            <button class="btn btn-green upload__upload-button">{{ $t('add_project') }}</button>
         </div>
         <UploadItem v-for="(episode, index) in episodes" :episode="episode" :key="index"/>
     </section>

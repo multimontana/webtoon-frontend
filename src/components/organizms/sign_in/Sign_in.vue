@@ -9,14 +9,14 @@
           <rect x="3.19167" y="11.4766" width="12" height="1.6" rx="0.8" transform="rotate(-45 3.19167 11.4766)" fill="#2E2E2E"/>
         </svg>
       </button>
-      <h3>Войти</h3>
+      <h3>{{ $t('sign_in') }}</h3>
       <button class="btn-light"
       @click="log_in()">
-        Войти
+        {{ $t('sign_in') }}
       </button>
       <button class="btn-green"
       @click="register () ">
-        Регистрация
+        {{ $t('registration') }}
       </button>
       <h5>
         <hr>Войдите с помощью

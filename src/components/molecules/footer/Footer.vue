@@ -1,7 +1,7 @@
 <template>
   <footer>
 <ScrollUp/>
-    <h4>Скачать приложение</h4>
+    <h4> {{ $t('download_application') }}</h4>
     <div class="download-links">
       <img src="../../../assets/img/app_store.svg">
       <img src="../../../assets/img/google_play.svg">
@@ -20,17 +20,17 @@
         <img src="../../../assets/img/social_icons/Tg_Dark_icon.svg" alt="VK dark icon">
       </a>
     </div>
-    <div class="footer-nav">
-      <a href="">
-        <h5>Новое</h5>
-      </a>
-      <a href="">
-        <h5>Популярное</h5>
-      </a>
-      <a href="">
-        <h5>Жанры</h5>
-      </a>
-    </div>
+<!--    <div class="footer-nav">-->
+<!--      <a href="">-->
+<!--        <h5>Новое</h5>-->
+<!--      </a>-->
+<!--      <a href="">-->
+<!--        <h5>Популярное</h5>-->
+<!--      </a>-->
+<!--      <a href="">-->
+<!--        <h5>Жанры</h5>-->
+<!--      </a>-->
+<!--    </div>-->
     <div class="footer-logo">
       <img src="../../../assets/img/logo.svg" alt="Manga">
        <Language/>
@@ -38,17 +38,17 @@
     <div class="privacy-policy">
       <a href="">
         <h6>
-          Пользовательское соглашение
+            {{ $t('user_agreement') }}
         </h6>
       </a>
       <a href="">
         <h6>
-          Правила сайта
+            {{ $t('site_terms') }}
         </h6>
       </a>
     </div>
     <div class="copyright-content">
-      <h6>Copyright © 2020. All rights reserved.</h6>
+      <h6>{{ $t('all_rights_reserved') }}</h6>
     </div>
   </footer>
 </template>

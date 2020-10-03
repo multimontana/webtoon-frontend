@@ -1,3 +1,16 @@
-{  "new":"news"
+{  "new":"News",
+  "popular": "Popular",
+  "genres": "Genres",
+  "sign_in" : "Sign in",
+  "add" : "Add",
+  "download_to_read_stories" : "Download to read stories, wherever you go",
+  "download_your_project" : "Download <br> your project",
+  "join_our_community" : "Join our community of contributors and share your work with millions of fans!",
+  "add_project" : "Add project",
+  "download_application" : "Download application",
+  "user_agreement" : "User agreement",
+  "site_terms" : "Site terms",
+  "all_rights_reserved" : "Copyright © 2020. All rights reserved."
+
 
 }
