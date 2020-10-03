@@ -12,6 +12,7 @@ export const post = {
   actions: {
     async createPostAction (context, data) {
       try {
+        // eslint-disable-next-line no-undef
         var formData = new FormData()
         formData.append('title', data.banner.name)
         formData.append('summary', data.banner.description)
@@ -31,6 +32,7 @@ export const post = {
     },
     async createEpisodeAction (context, data) {
       try {
+        // eslint-disable-next-line no-undef
         var formData = new FormData()
         formData.append('title', data.episode.name)
         formData.append('episode_thumbnail_pic', data.episode.background)

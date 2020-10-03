@@ -1,11 +1,11 @@
 export const themeMode = {
   state: {
-    mode: localStorage.getItem('mode') ? localStorage.getItem('mode') : localStorage.setItem('mode', true)
+    mode: window.localStorage.getItem('mode') ? window.localStorage.getItem('mode') : window.localStorage.setItem('mode', true)
   },
   mutations: {
     SET_THEME_MODE (state, payload) {
-      state.mode = localStorage.getItem('mode') === 'true' ? 'false' : 'true'
-      localStorage.setItem('mode', state.mode)
+      state.mode = window.localStorage.getItem('mode') === 'true' ? 'false' : 'true'
+      window.localStorage.setItem('mode', state.mode)
     }
   },
   getters: {

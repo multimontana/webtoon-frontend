@@ -3,11 +3,11 @@
   <div class="navigation">
     <div class="logo">
       <router-link to="/" class="nav__link">
-        <img src="../../../assets/img/logo.svg" alt="Manga">
+        <img src="../../../assets/img/logo.svg" alt="Manga" />
       </router-link>
     </div>
     <div class="nav">
-      <router-link to="/items" class="nav__link">Новое</router-link>
+      <router-link to="/items" class="nav__link">{{ $t('new') }}</router-link>
       <router-link to="/popular" class="nav__link">Популярное</router-link>
       <router-link to="/genres" class="nav__link">Жанры</router-link>
     </div>

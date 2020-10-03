@@ -39,6 +39,8 @@ export const category = {
     },
     async getCategoriesAction (context, data) {
       try {
+        console.log(context, 'context category')
+        console.log(data, 'data category')
         const response = await axios.get('/get/categories?language_id=' + data.language_id + '&page=' + data.page + '&limit=' + data.limit, {
           headers: {
             'Content-Type': 'application/json',
