@@ -56,7 +56,7 @@ export const episode = {
           }
         })
         // context.commit('SET_EPISODE', response.data)
-        console.log(response.data)
+        console.log(response.data, 55)
         return response.data.results
       } catch (e) {
         console.log(e)

@@ -485,6 +485,15 @@ section.proizvedeniya-sec {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    position: relative;
+    z-index: 9;
+
+}
+.proizvedeniya-sec .avatar-keeper .form-avatar .image-keeper img:hover + button{
+    z-index:10;
+}
+.button-keeper:hover{
+    z-index: 10;
 }
 
 .proizvedeniya-sec .avatar-keeper .form-avatar .button-keeper {
@@ -537,6 +546,14 @@ section.proizvedeniya-sec {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    z-index: 9;
+    position: absolute;
+}
+.proizvedeniya-sec .form-keeper .form-banner .image-keeper img:hover + button{
+    z-index:10;
+}
+.button-keeper:hover{
+    z-index: 10;
 }
 
 .proizvedeniya-sec .form-keeper .form-banner .button-keeper {

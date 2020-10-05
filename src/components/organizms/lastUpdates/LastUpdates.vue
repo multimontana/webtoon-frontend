@@ -8,7 +8,7 @@
         <div class="">
         </div>
         <ul class="cart-list cart-list__big-items">
-        <CartItem :episodes="episodes"/>
+        <CartItem v-for="(episode, index) in episodes" :episode="episode" :key="index"/>
         </ul>
         <button class="cart-list__show-more btn-light btn-sm">
             Загрузить еще

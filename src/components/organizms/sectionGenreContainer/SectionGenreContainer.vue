@@ -11,32 +11,40 @@
             <a href="#" class="genre__tab">Другие</a>
         </div>
         <div class="genre__cart-keeper">
-     <CartItem/>
-     <CartItem/>
-     <CartItem/>
-     <CartItem/>
-     <CartItem/>
-     <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/>
+     <CartItem  v-for="(episode, index) in episodes" :episode="episode" :key="index"/>
         </div>
     </section>
 </template>
 <script>
 import CartItem from '../../molecules/cartItem/CartItem'
+import { mapActions } from 'vuex'
 export default {
   name: 'SectionGenreContainer',
-  components: { CartItem }
+  components: { CartItem },
+  data () {
+    return {
+      episodes: [],
+      data: {
+        language_id: 1,
+        page: 1,
+        limit: 100
+      }
+    }
+  },
+  created () {
+    this.getEpisodes()
+  },
+  methods: {
+    ...mapActions(['getEpisodesAction']),
+    getEpisodes () {
+      this.getEpisodesAction(this.data).then((res) => {
+        if (res && res !== undefined) {
+          const result = res.filter((index, item) => item < 12)
+          this.episodes = result
+        }
+      })
+    }
+  }
 }
 </script>
 

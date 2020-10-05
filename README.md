@@ -1,4 +1,4 @@
-# stickers
+# webtoon_frontend
 
 ## Project setup
 ```

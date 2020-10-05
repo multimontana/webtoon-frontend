@@ -7,6 +7,7 @@
 <script>
 import TopItems from '../../components/organizms/topItems/TopItems'
 import PopularItems from '../../components/organizms/popularPopularItems/PopularItems'
+
 export default {
   name: 'Popular',
   components: { PopularItems, TopItems },

@@ -4,7 +4,7 @@
     <SignIn/>
     <Login/>
     <Registration/>
-    <MainCartKeeper :sliderData="sliderItems" :show="true"/>
+    <MainCartKeeper :sliderData ="sliderItems" v-bind:show = "true" />
     <hr>
     <UploadtoRead/>
     <hr>
@@ -51,7 +51,6 @@ export default {
   }
 }
 </script>
-
 <style>
 
 </style>

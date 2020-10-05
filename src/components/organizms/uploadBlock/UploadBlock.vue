@@ -14,7 +14,7 @@
             <article class="upload__upload-text">
                 {{ $t('join_our_community') }}
             </article>
-            <button class="btn btn-green upload__upload-button">{{ $t('add_project') }}</button>
+         <router-link to="/publish"><button class="btn btn-green upload__upload-button">{{ $t('add_project') }}</button></router-link>
         </div>
         <UploadItem v-for="(episode, index) in episodes" :episode="episode" :key="index"/>
     </section>
@@ -44,7 +44,7 @@ export default {
     getEpisodes () {
       this.getEpisodesAction(this.data).then((res) => {
         if (res && res !== undefined) {
-          const result = res.filter((index, item) => item < 12)
+          const result = res.filter((index, item) => item < 8)
           this.episodes = result
         }
       })
